@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jensen Martin — projects and technical work." />
+  <title>Jensen Martin — Work</title>
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="wrap header-inner">
+      <a href="./index.html" class="brand" aria-label="Jensen Martin home">
+        <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <rect x="10" y="10" width="28" height="28" rx="9" stroke="currentColor" stroke-width="3"></rect>
+          <path d="M18 24h12" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+        </svg>
+        <span>Jensen Martin</span>
+      </a>
+
+      <div class="nav">
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="./work.html">Work</a>
+          <a href="./index.html#about">About</a>
+          <a href="./index.html#skills">Skills</a>
+          <a href="./index.html#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Projects archive</div>
+          <h1>A place for technical work and future builds.</h1>
+          <p class="lede">
+            This page for courseworks, research, experiments, and personal projects that I have completed or am currently working on. I will be adding more projects over time, so check back for updates.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects-list">Browse projects</a>
+            <a class="btn btn-secondary" href="./index.html">Back home</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="projects-list">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Current projects</div>
+            <h2>Selected work</h2>
+          </div>
+          <p>Some of my favourite projects that I have worked on.</p>
+        </div>
+
+        <div class="projects">
+          <article class="card project">
+            <div>
+              <h3>Neural ODE Modelling of Drug Concentration</h3>
+              <p>
+                Trained GRU-conditioned Neural ODE models on real pharmacokinetic datasets to learn continuous-time drug concentration dynamics, then evaluated performance using RMSE, MAE, R², MAPE, and MPE through Leave-One-Out Cross-Validation.
+              </p>
+            </div>
+            <div class="project-meta"><span class="pill">Python</span><span class="pill">Neural ODEs</span><span class="pill">Research</span></div>
+            <a class="project-link" href="#">Dissertation →</a>
+          </article>
+
+          <article class="card project">
+            <div>
+              <h3>Multilayer Perceptron Regression Model</h3>
+              <p>
+                Built a neural network regression model from scratch in Python without libraries such as PyTorch, using batch learning, backpropagation, momentum, and weight decay, with outlier detection and lag feature engineering.
+              </p>
+            </div>
+            <div class="project-meta"><span class="pill">Python</span><span class="pill">Machine Learning</span><span class="pill">From scratch</span></div>
+            <a class="project-link" href="#">Project →</a>
+          </article>
+
+          <article class="card project">
+            <div>
+              <h3>Daisyworld Climate Simulation GUI</h3>
+              <p>
+                Modelled the Daisyworld system by coding the underlying mathematics in Python and using Tkinter to build a GUI that visualises the climate-biosphere feedback model in real time.
+              </p>
+            </div>
+            <div class="project-meta"><span class="pill">Python</span><span class="pill">Tkinter</span><span class="pill">Simulation</span></div>
+            <a class="project-link" href="#">A Level project →</a>
+          </article>
+
+          <article class="card project">
+            <div>
+              <h3>MLP Tutorial</h3>
+              <p>
+                A time-series machine learning tutorial project focused on data exploration, preprocessing, feature engineering, model training, and evaluation, producing a polished end-to-end workflow.
+              </p>
+            </div>
+            <div class="project-meta"><span class="pill">Python</span><span class="pill">ML</span><span class="pill">Coursework</span></div>
+            <a class="project-link" href="#">Coursework →</a>
+          </article>
+
+          <article class="card project">
+            <div>
+              <h3>Blackjack Reinforcement Learning</h3>
+              <p>
+                Built reinforcement learning agents for blackjack using SARSA, Monte Carlo, and Q-Learning, then compared the methods using win rate, draw rate, loss rate, and average return. SARSA performed best overall.
+              </p>
+            </div>
+            <div class="project-meta"><span class="pill">RL</span><span class="pill">Q-Learning</span><span class="pill">SARSA</span></div>
+            <a class="project-link" href="#">Report →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>Separate projects page for long-term portfolio growth.</p>
+      <p>© <span id="year"></span> Jensen Martin</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js" defer></script>
+</body>
+</html>
